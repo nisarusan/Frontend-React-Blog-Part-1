@@ -1,5 +1,6 @@
 import data from '../../constants/data.json';
 import './Blog.css';
+import { Link } from "react-router-dom";
 
 function Blog() {
     return (
@@ -9,7 +10,7 @@ function Blog() {
                 {data.map((blogs) => (
                     <main key={blogs.id} className="blog">
                         <div className="intro">
-                            <h3>{blogs.title}</h3><span>{blogs.author}</span>
+                            <Link to={`/Blogpost/${blogs.title}`}><h3>{blogs.title}</h3></Link><span>{blogs.author}</span>
                         </div>
                         <p>{blogs.comments} Reacties <span>{blogs.shares} gedeeld</span></p>
                     </main>

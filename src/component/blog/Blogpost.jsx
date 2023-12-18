@@ -26,3 +26,44 @@ function Blogpost({ }) {
 }
 
 export default Blogpost;
+
+
+// If u want url-slug
+// function Blogpost() {
+
+//     function convertToSlug(text) {
+//         return text
+//             .toLowerCase()
+//             .replace(/ /g, '-')        // Replace spaces with dashes
+//             .replace(/[^\w-]+/g, ''); // Remove non-word characters except dashes
+//     }
+    
+//     // Usage:
+    
+//     const { title } = useParams();
+
+//     useEffect(() => {
+//         document.title = `Blog: ${title}`;
+//     }, [title]);
+
+//     const slug = title.toLowerCase().replace(/ /g, '-');
+
+//     // Find the blog post based on the slug
+//     const blog = data.find(post => convertToSlug(post.title) === slug);
+
+//     if (blog) {
+//         return (
+//             <main className="blog">
+//                 <div className="intro">
+//                     <h3>{blog.title}</h3>
+//                     <span>{blog.author}</span>
+//                 </div>
+//                 <p>{blog.comments} Reacties <span>{blog.shares} gedeeld</span></p>
+//             </main>
+//         );
+//     } else {
+//         // Handle case when the blog post with that title is not found
+//         return <p>Blog Not Found</p>;
+//     }
+// }
+
