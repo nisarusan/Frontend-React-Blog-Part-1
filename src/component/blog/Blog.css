@@ -1,0 +1,19 @@
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /* border: 2px solid red; */
+}
+main {
+    display: flex;
+    /* border: 2px solid blue; */
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: calc(100% / 4);
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+
+}
