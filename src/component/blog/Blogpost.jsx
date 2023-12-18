@@ -6,7 +6,7 @@ function Blogpost({ }) {
     const { id } = useParams();
     useEffect(() => {
         document.title = `Blog #${id}`;
-    }, []);
+    }, [id]);
 
     const ind = id - 1;
     console.log(id);
