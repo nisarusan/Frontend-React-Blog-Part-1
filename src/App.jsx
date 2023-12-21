@@ -8,6 +8,7 @@ import Blog from './component/blog/Blog';
 import ErrorPage from './component/error/ErrorPage';
 import Blogpost from './component/blog/Blogpost';
 import NewPost from './component/NewPost/NewPost';
+import Index from './component/blog/Index';
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                     <Route path="/blog" element={<Blog />} />
                     <Route path="/blogpost/:id" element={<Blogpost />} />
                     <Route path="/new-post" element={<NewPost />} />
+                    <Route path="/indexs" element={<Index />} />
                     <Route path="/error" element={<ErrorPage />} />
                 </Routes>
             </div>
