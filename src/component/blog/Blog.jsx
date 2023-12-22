@@ -10,7 +10,7 @@ function Blog() {
                 {data.map((blogs) => (
                     <main key={blogs.id} className="blog">
                         <div className="intro">
-                            <Link to={`/Blogpost/${blogs.title}`}><h3>{blogs.title}</h3></Link><span>{blogs.author}</span>
+                            <Link to={`/Blogpost/${blogs.id}`}><h3>{blogs.title}</h3></Link><span>{blogs.author}</span>
                         </div>
                         <p>{blogs.comments} Reacties <span>{blogs.shares} gedeeld</span></p>
                     </main>
